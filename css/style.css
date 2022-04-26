@@ -1,0 +1,217 @@
+/* pink #F3CEC8 */
+/* text #424D5B */
+
+:root {
+    --bg-main-color: #f3cec8;
+    --text-color: #424D5B;
+}
+
+html {
+    background: #fff;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--text-color);
+}
+
+main {
+    max-width: 1400px;  
+    min-width: 320px;  
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+
+button {
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color:#e8d8d6;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;   
+    background-color: #d8d9dbf5;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+input:focus,
+textarea:focus {
+    outline-color: #f3cec8;
+    outline-style: outset;
+}
+
+/* Header & Nav section */
+
+header {
+    background: #fff;
+    width: 100%;
+    z-index: 30;
+    font-weight: 600;
+}
+
+.navMenu {
+    z-index: 10;
+}
+
+.md-menu-items {
+    z-index: 1;
+}
+
+.toggle-menu,
+.toggle-close {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    z-index: 5;
+}
+
+.menu-items {
+    text-align: center;
+    background: var(--bg-main-color);
+}
+
+
+nav a {
+   padding: 1rem;
+}
+
+
+/* Main area */
+
+section {
+    max-width: 1440px;
+    margin: auto;
+}
+
+section.landing-screen,
+section.main-program,
+section.breathing,
+brush,
+#our-teachers,
+#form-section,
+.teacher-image
+ {
+    background-size: cover;
+}
+
+section.landing-screen {
+    background-image: url(../images/svg/abg-entire.svg);
+}
+
+section.main-program {
+    background-image: url(../images/bg2.svg);
+    background-position: right;  
+}
+
+.brush {
+    background: url(../images/SVG/apinkbrush3.svg);
+}
+
+
+section.breathing {
+    background-image: url(../images/SVG/ameditationbg.svg);
+    position: relative;
+}
+
+#our-teachers {
+    background-image: url(../images/SVG/asimple-bg.svg);
+    background-position: center;
+}
+
+.teacher-image {
+    background-position: center;
+}
+
+#form-section {
+    background-image: url(../images/SVG/abg-entire.svg);
+}
+
+
+
+
+
+/* =========pop-up-card ============ */
+.email-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.email-modal-visible {
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+}
+
+.emailButton:active {
+    transform: scale(0.95);
+}
+
+
+@media (max-width: 767px) {
+    .menu-items {
+        background-color: var(--bg-main-color);
+    }
+
+    .logo {
+        z-index: 5;
+    }
+
+    .navMenu {
+        z-index: 20;
+        min-width: 100%;
+    }
+
+    .picture img {
+        transform: scaleX(-1);
+    }
+
+    section.main-program::after,
+    section.breathing::after {
+        content: "";
+        width:100%;
+        height: 100%;   
+        background: black;
+        position: absolute;
+        top: 0;     
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.7;
+        z-index: 1;
+    }
+
+    section.main-program .description,
+    section.breathing .description {
+        z-index: 10;
+    }
+}
+

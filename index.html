@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The go-to cosmetic online store">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Breathe - The Yoga Center</title>
+
+</head>
+<body class="relative">
+    <header class="flex justify-between items-center fixed top-0">
+        <!-- generic logo area -->
+        <a href="/">
+            <div class="logo w-20 mx-5 flex items-center h-full border md:hidden">
+                <img src="images/SVG/abg-deco.svg" alt="">
+            </div>
+        </a>
+        <!-- Nav menu -->
+       <nav class="w-full h-20 flex flex-col items-between justify-start relative">
+           <!-- Medium screen logo &  nav menu -->
+            <div class="flex hidden md:flex flex-row justify-between items-center w-full px-20 h-full md-menu-items">
+                <a href="/" class="logo">
+                    <div class="logo w-20 flex items-center h-full border">
+                        <img src="images/SVG/abg-deco.svg" alt="">
+                    </div>
+                </a>
+                <div class="flex justify-end"> 
+                    <a href="#home">Home</a>
+                    <a href="/">About</a>
+                    <a href="/">Classes</a>
+                    <a href="/">Shop</a>
+                    <a href="/">Contact</a>
+                </div>           
+            </div>
+             <!-- Small and under screen Nav menu -->
+            <div class="navMenu w-full h-auto flex flex-col items-center md:hidden">            
+                <div class="cursor-pointer bg-[#424D5B]">
+                    <div class="toggle-menu absolute top-6 right-5"> 
+                        <i class="fa-solid fa-bars"></i>
+                    </div>               
+                    <div class="toggle-close absolute top-7 right-[1.4rem] flex items-center">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="menu-items flex hidden absolute md:p-5 w-full h-auto mt-0 py-20">
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/">Classes</a>
+                    <a href="/">Shop</a>
+                    <a href="/">Contact</a>
+                </div> 
+            </div>           
+       </nav>
+    </header>
+    <!-- Main area -->
+    <main class="scroller mx-auto w-full mt-20 relative ">
+        <!-- First section -->
+        <section id="home" class="landing-screen p-9 h-auto lg:h-screen flex flex-col md:flex-row items-center">
+            <div class="picture order-2 absolute top-5 md:top-20 md:relative md:order-1">
+                <img src="images/home.png" alt="landing-photo" class="w-64 md:w-full opacity-[0.7] md:opacity-[1]" >
+            </div>
+            <div class="description big w-full p-9 order-1 md:order-2">
+                <h1 class="text-4xl md:text-6xl font-bold pt-44 md:w-full md:pl-12">Balance Your Body and Mind</h1>
+                <p class="mt-10 bg-white md:pl-12 text-sm md:text-lg py-2 rounded-lg">Improve your posture. Reduce your back pain. Balance your chakras and embrace the full potential of what your body can achieve.</p>
+                <button class="join-button text-sm md:text-base p-2 px-3 md:px-4 md:ml-12 mt-8 bg-[#F3CEC8] shadow-sm uppercase font-semibold">join us now</button>
+            </div>
+        </section>
+        <!-- Second section - program -->
+        <section id="key-program" class=" relative main-program p-6 lg:h-screen flex flex-col md:flex-row lg:pt-24 md:h-screen">
+            <div class="description big w-full p-12 order-2 md:order-1 h-full text-white md:text-[#424D5B]">
+                <h2 class="text-4xl md:text-6xl font-bold pt-20  md:w-3/4 md:pl-12">Stress Management Program</h2>
+                <p class="md:pl-12 text-sm md:text-lg mt-10 md:pl-12 sm:w-3/4 ">Neutralize your stress through changing the way you look at your self. Find your inner peave through our deep self-discovery meditation.
+                </p>
+                <button class="action-button md:mx-12 p-2 px-3 md:px-4 mt-8 md:bg-[#424D5B] md:text-white text-[#424D5B] bg-[#F3CEC8] text-sm md:text-base shadow-sm uppercase font-semibold">join us now</button>
+            </div>
+        </section>
+        <!-- Third section - illustration -->
+        <section id="yoga-movements" class="flex flex-col items-center md:flex-row md:justify-around p-20 bg-white">            
+            <div class="movement flex flex-col items-center p-10 text-sm text-center">
+                <div class="h-20 w-20 brush">
+                    <img src="images/SVG/ayogapose1.svg" alt="first movement" class="h-full w-full">
+                </div>
+                <h6 class="mt-3 font-semibold">Stretch your thigh</h6>
+            </div>
+            <div class="movement flex flex-col items-center p-10 text-sm text-center">
+                <div class="h-20 w-20 brush">
+                    <img src="images/SVG/ayogapose2.svg" alt="first movement" class="h-full w-full">
+                </div>
+                <h6 class="mt-3 font-semibold">Strengthen your core</h6>
+            </div>
+            <div class="movement flex flex-col items-center p-10 text-sm text-center">
+                <div class="h-20 w-20 brush">
+                    <img src="images/SVG/ayogapose3.svg" alt="first movement" class="h-full w-full">
+                </div>
+                <h6 class="mt-3 font-semibold">Work your glutes</h6>
+            </div>
+        </section>
+        <!-- Fourth section - 2nd program -->
+        <section id="yoga-breathing" class="md:h-screen p-12 sm:p-16 md:pl-72 h-auto flex flex-col md:flex-row md:justify-end md:items-center breathing ralative">            
+            <div class="description big w-full flex flex-col h-auto md:bg-white/[0.9] text-white md:text-[#424D5B] p-6 sm:w-3/4 md:ml-48 md:justify-center xl:mt-24 rounded-lg">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold">Breathing technique - Pranayama</h3>
+                <p class="mt-10 text-sm md:text-lg ">Start with learning how to utilize the breath. Cherish every moment of your breath and every cell in you body.</p>
+                <button class="action-button text-xs md:text-small p-2 md:ml-0 w-24 my-4 bg-[#F3CEC8] text-[#424D5B] shadow-sm uppercase font-semibold">learn more</button>
+            </div>
+        </section>
+        <section id="our-teachers" class="p-16 bg-[#f3cec8] pb-24">
+            <div class="heading mt-12 ml-2">
+                <h2 class="my-8 text-3xl md:text-5xl font-bold">Our teachers</h2>
+                <p class="text-sm mb-8">Make the best out of every minute of your class by learning the useful technics from our highly experienced teachers.</p>
+            </div>
+            <div class="teachers flex flex-col md:flex-row md:justify-between ml-2">
+                <div class="teacher md:w-52 md:h-80 shadow-lg my-4 rounded-lg ">
+                    <div class="teacher-image one w-full h-64 md:h-48 bg-[url('./images/ale-romo-photography-r361VNC-T7Q-unsplash.jpg')] rounded-t-lg"></div>
+                    <div class="p-2 bg-white rounded-b-lg">
+                        <h5 class="font-semibold">Lauren Kotavish</h5>
+                        <small class="block">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</small>
+                    </div>
+                </div>
+                <div class="teacher md:w-52 md:h-80 md:h-80 shadow-lg my-4 rounded-lg">
+                    <div class="teacher-image w-full h-64 md:h-48 two bg-[url('./images/yogi-man.jpg')] rounded-t-lg"></div>
+                    <div class="p-2 bg-white rounded-b-lg">
+                        <h5 class="font-semibold">Anu Singh</h5>
+                        <small class="block">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</small>
+                    </div>
+                    
+                </div>
+                <div class="teacher md:w-52 md:h-80 shadow-lg my-4 rounded-lg">
+                    <div class="teacher-image w-full h-64 md:h-48 three bg-[url('./images/back-health.jpg')] rounded-t-lg"></div>
+                    <div class="p-2 bg-white rounded-b-lg">
+                        <h5 class="font-semibold">Erika Jackson</h5>
+                        <small class="block">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="yoga-claases" class=" p-12   h-auto flex flex-col md:flex-row bg-[#F3CEC8] w-full">
+            <div class="p-4 md:order-last ml-2">
+                <h4 class="text-4xl lg:text-5xl font-bold">Book now for a free trial.</h4>
+                <button class="py-2 px-4 md:ml-0  my-4 mt-4 bg-white text-[#424D5B] text-sm md:text-base font-semibold uppercase shadow-sm">Book Now</button>
+            </div>               
+                             
+            <div class="p-4 md:w-1/2 ml-2">
+                <img src="images/kaylee-garrett-GaprWyIw66o-unsplash.jpg" alt="group yoga" class="rounded-lg shadow-lg">
+            </div>           
+        </section>
+        <section id="form-section" class="p-16 pb-24 h-auto w-full contact">
+            <h2 class="text-4xl lg:text-5xl font-bold ml-2">Get In Touch</h2>
+            <p class="ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum saepe eum dolores pariatur iste.</p>
+            <form class="ml-2 pr-2">
+                <input type="text" name="name" placeholder="Your Name" class="p-2 my-3 firstName">
+                <input type="email" name="email" placeholder="Your Email" class="p-2 my-3 email">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" class="p-2 my-3"></textarea>
+                <button class="action-button  text-sm md:text-base p-2 px-3 md:px-3 mt-4 bg-[#F3CEC8] shadow-sm uppercase font-semibold">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="w-full h-auto bg-[#424D5B] mx-auto">
+        <div class="container w-full flex flex-col items-center md:flex-row md:justify-evenly md:gap-20 md:items-start p-12 text-white text-xs leading-loose mx-auto max-w-9xl">
+            <div class="text-center md:text-left font-light mb-6 ">
+                <h4 class="font-semibold">Breathe - The Yoga Center</h4>
+                <p>Happy Water Street 20</p>
+                <p>StrongLand</p>
+                <p>12345</p>
+                <a href="" class="hover:text-[#F3CEC8]">www.breathe.example</a>
+            </div>
+            <div class="grid md:grid-cols-3 text-center md:text-left gap-8 font-light">
+                <div>
+                    <p class="font-semibold">Sitemap</p>
+                    <a href="" class="hover:text-[#F3CEC8]">Home</a>
+                    <a href="" class="hover:text-[#F3CEC8]">About</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Classes</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Shop</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Contact</a>
+                </div>
+                <div>
+                    <p class="font-semibold">Lorem</p>
+                    <a href="" class="hover:text-[#F3CEC8]">Ipsum</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Neque</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Dictum</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Enim lobotris</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Porttitor</a>
+                </div>
+                <div>
+                    <p class="font-semibold">Ipsum</p>
+                    <a href="" class="hover:text-[#F3CEC8]">Lorem</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Neque</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Dictum</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Enim lobotris</a>
+                    <a href="" class="hover:text-[#F3CEC8]">Porttitor</a>
+                </div>
+    
+            </div>
+            <div class="flex flex-col items-center md:items-start mt-5 md:mt-0">
+                <img src="images/SVG/afooterlogo.svg" alt="footer logo" class="w-12">
+                <p class="font-light">Copyright @ 2022 Breathe - The Yoga Center</p>
+                <div class="social flex justify-center md:justify-between w-1/2">
+                    <a href=""><i class="fa-brands fa-facebook m-2 md:m-0 hover:text-[#F3CEC8]"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square m-2 md:m-0 hover:text-[#F3CEC8]"></i> </a>  
+                    <a href=""><i class="fa-brands fa-instagram-square m-2 md:m-0 hover:text-[#F3CEC8]"></i></a>
+                </div>
+            </div>
+        </div>       
+    </footer>    
+    <div class="email-modal"> 
+        <div class="modal-close-btn absolute top-2 md:top-10 z-55 right-8 md:right-10 cursor-pointer">
+            <i class="fa-solid fa-xmark text-white" ></i>
+        </div>          
+        <div class="email-modal-container max-w-[700px] p-20 z-50 flex flex-col md:flex-row justify-center">
+            <div>
+                <img src="images/stretch.jpg" alt="stretchImage" class="sm:h-[400px] md:h-[280px] w-[300px]">
+            </div>            
+            <div class="email-modal-info text-[#F3CEC8] bg-black p-4 w-full h-70 flex flex-col items-center md:items-start">                
+                <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold p-2 md:p-6 leading-relaxed text-center md:text-left "><span class="text-white">Join Now</span> <span class="text-gray-400">&</span><br>Get 20% Off</h2>
+                <button class="text-xs md:text-base w-3/4 text-black p-2 px-4 md:ml-8 bg-[#F3CEC8] shadow-sm uppercase font-bold rounded-none modal-button mt-2">Join Now</button>
+            </div>
+        </div>        
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
