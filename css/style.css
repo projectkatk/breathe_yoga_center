@@ -16,7 +16,6 @@ body {
 }
 
 main {
-    max-width: 1400px;  
     min-width: 320px;  
 }
 
@@ -98,7 +97,6 @@ nav a {
 /* Main area */
 
 section {
-    max-width: 1440px;
     margin: auto;
 }
 

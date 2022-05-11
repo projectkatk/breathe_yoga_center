@@ -66,17 +66,6 @@ modalButton.addEventListener('click', sendEmail);
 
 
 
-// emailButton.addEventListener('click', () => { 
-
-//     if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(joinEmail.value)) {
-//         modalInfo.innerHTML = `<h2>Thank you! Please check your email for our perks</h2>`    
-//     }
-    
-// })
-
-
-
-
 
 
            
